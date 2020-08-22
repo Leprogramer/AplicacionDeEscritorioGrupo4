@@ -3,12 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package controlador;
+package modelo;
 
-/**
- *
- * @author admin
- */
-public class PaisControlador {
-    
+public class MenuPrincipal {
+ public int usuario;
+ public int password;
+ public int iniciar;
+
 }
+
