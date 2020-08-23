@@ -55,7 +55,7 @@ public class PruebasMynor {
         System.out.println(mensaje);
         */
         //Buscar
-        usuario.setUsuarioId(7);
+        usuario.setUsuarioId(3);
         datosLocalizado = usuarioDao.buscarUsuario(usuario);
         System.out.println(datosLocalizado.toString());
     }

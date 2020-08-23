@@ -28,6 +28,7 @@ public class UsuarioDao  implements UsuarioInterface{
     private ResultSet resultadoSelect; //Ejecutar y almacenar los Select
     private String sql; //colocar el SQL
     private int cantidadRegistros; //conocer la cantidad de registros afectados por el SQL
+    
     @Override
     public String agregarUsuario(Usuario usuario) {
         try {
