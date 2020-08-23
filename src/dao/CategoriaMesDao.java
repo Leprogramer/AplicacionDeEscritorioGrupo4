@@ -27,6 +27,10 @@ public class CategoriaMesDao implements CategoriaMesInterfacesInterface {
     static CategoriaMesDao buscarCategoriaMes(CategoriaMesDao categoriaMes) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
+
+    static String actualizarCategoriaMes(CategoriaMesDao categoriaMes) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     private String mensaje; //mensaje insert, update, delete
      private CategoriaMes datosBusqueda; //cuando se haga una busqueda los datos se almacenaran en este objeto y se retornara
     
@@ -157,6 +161,30 @@ public class CategoriaMesDao implements CategoriaMesInterfacesInterface {
     }
 
     void setCorrelativo(int i) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    void setCategoriaId(String persona) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    void setTipoCategoria(String inventada) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    void setMesId(String persona) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    void setAnio(String string) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    void setMonto(int i) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    void setUsuarioId(int i) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
