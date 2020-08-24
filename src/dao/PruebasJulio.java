@@ -5,50 +5,59 @@
  */
 package dao;
 
+import modelo.CategoriaMes;
+
 /**
  *
  * @author admin
  */
 public class PruebasJulio {
     public static void main(String[] args) {
-        CategoriaMesDao mesDao = new CategoriaMesDao();
+        CategoriaMesDao dao = new CategoriaMesDao();
         String mensaje;
-        CategoriaMesDao categoriaMes = new CategoriaMesDao(); //asignar valores al usuario
-        CategoriaMesDao datosLocalizado = new CategoriaMesDao();//colocar los datos del usuario cuando se realice una busqueda
+        CategoriaMes categoriaMes = new CategoriaMes(); //asignar valores al usuario
+        CategoriaMes datosLocalizado = new CategoriaMes();//colocar los datos del usuario cuando se realice una busqueda
         
         
-        
+        /*
         //Eliminar Mes
-        categoriaMes.setCorrelativo(1);
-        mensaje = CategoriaMesDao.eliminarCategoriaMes(categoriaMes);
+        categoriaMes.setCorrelativo(2);
+        mensaje = dao.eliminarCategoriaMes(categoriaMes);
+        System.out.println(mensaje);
+        */
         
-        
-        
-        
-        
-        
-        
+       /*
         //Modificar
         categoriaMes.setCorrelativo(1);
-        categoriaMes.setCategoriaId("Persona");
-        categoriaMes.setTipoCategoria("Inventada");
-        categoriaMes.setMesId("persona");
-        categoriaMes.setAnio("123456");
-        categoriaMes.setMonto(1);
+        categoriaMes.setCategoriaId(1);
+        categoriaMes.setTipoCategoria(1);
+        categoriaMes.setMesId(1);
+        categoriaMes.setAnio(2020);
+        categoriaMes.setMonto(1000);
         categoriaMes.setUsuarioId(1);
-        mensaje = CategoriaMesDao.actualizarCategoriaMes(categoriaMes);
+        mensaje = dao.actualizarCategoriaMes(categoriaMes);
                 
         System.out.println(mensaje);
+        */
         
-        
-        
+       /*
         //Buscar
-        categoriaMes.setCorrelativo(1);
-        datosLocalizado = CategoriaMesDao.buscarCategoriaMes(categoriaMes);
+        categoriaMes.setCorrelativo(15);
+        datosLocalizado = dao.buscarCategoriaMes(categoriaMes);
         System.out.println(datosLocalizado.toString());
+      */
         
-        
-        
-        
+        /*
+      categoriaMes.setCorrelativo(15);
+        categoriaMes.setCategoriaId(1);
+        categoriaMes.setTipoCategoria(1);
+        categoriaMes.setMesId(1);
+        categoriaMes.setAnio(2020);
+        categoriaMes.setMonto(1000);
+        categoriaMes.setUsuarioId(1);
+        mensaje = dao.agregarCategoriaMes(categoriaMes);
+                
+        System.out.println(mensaje);
+        */
     }
 }

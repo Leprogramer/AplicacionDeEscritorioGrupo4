@@ -14,7 +14,7 @@ public class CategoriaMes {
     private int categoriaId;
     private int tipoCategoria;
     private int mesId;
-    private String anio;
+    private int anio;
     private int monto;
     private int usuarioId;
     
@@ -22,7 +22,7 @@ public class CategoriaMes {
         
     }
 
-    public CategoriaMes(int correlativo, int categoriaId, int tipoCategoria, int mesId, String anio, int monto, int usuarioId) {
+    public CategoriaMes(int correlativo, int categoriaId, int tipoCategoria, int mesId, int anio, int monto, int usuarioId) {
         this.correlativo = correlativo;
         this.categoriaId = categoriaId;
         this.tipoCategoria = tipoCategoria;
@@ -32,11 +32,12 @@ public class CategoriaMes {
         this.usuarioId = usuarioId;
     }
 
-    /*
+    
+
     @Override
     public String toString() {
-        return "Usuario{" + "usuarioId=" + usuarioId + ", nombre=" + nombre + ", apellido=" + apellido + ", nombreUsuario=" + nombreUsuario + ", contrasenia=" + contrasenia + ", paisId=" + paisId + ", tipoUsuario=" + tipoUsuario + '}';
-    }*/
+        return "CategoriaMes{" + "correlativo=" + correlativo + ", categoriaId=" + categoriaId + ", tipoCategoria=" + tipoCategoria + ", mesId=" + mesId + ", anio=" + anio + ", monto=" + monto + ", usuarioId=" + usuarioId + '}';
+    }
     
     
     
@@ -72,11 +73,11 @@ public class CategoriaMes {
         this.mesId = mesId;
     }
 
-    public String getAnio() {
+    public int getAnio() {
         return anio;
     }
 
-    public void setAnio(String anio) {
+    public void setAnio(int anio) {
         this.anio = anio;
     }
 

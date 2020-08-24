@@ -10,16 +10,36 @@ package modelo;
  * @author Julius
  */
 public class Categoria {
-    private int categriaId;
+    private int categoriaId;
     private String nombre;
-    private int tipoCategoria;
+    private int tipo_categoria_id;
 
-    public int getCategriaId() {
-        return categriaId;
+    
+     public Categoria (){
+}
+    
+    
+    public Categoria(int categoriaId, String nombre, int tipo_categoria_id) {
+        this.categoriaId = categoriaId;
+        this.nombre = nombre;
+        this.tipo_categoria_id = tipo_categoria_id;
     }
 
-    public void setCategriaId(int categriaId) {
-        this.categriaId = categriaId;
+    
+
+    
+
+    @Override
+    public String toString() {
+        return "Categoria{" + "categoriaId=" + categoriaId + ", nombre=" + nombre + ", tipo_categoria_id=" + tipo_categoria_id + '}';
+    }
+
+    public int getCategoriaId() {
+        return categoriaId;
+    }
+
+    public void setCategoriaId(int categoriaId) {
+        this.categoriaId = categoriaId;
     }
 
     public String getNombre() {
@@ -30,27 +50,15 @@ public class Categoria {
         this.nombre = nombre;
     }
 
-    public int getTipoCategoria() {
-        return tipoCategoria;
+    public int getTipo_categoria_id() {
+        return tipo_categoria_id;
     }
 
-    public void setTipoCategoria(int tipoCategoria) {
-        this.tipoCategoria = tipoCategoria;
+    public void setTipo_categoria_id(int tipo_categoria_id) {
+        this.tipo_categoria_id = tipo_categoria_id;
     }
 
-    public Categoria(int categriaId, int nombre, int tipoCategoria) {
-        this.categriaId = categriaId;
-        this.nombre = this.nombre;
-        this.tipoCategoria = tipoCategoria;
-    }
-    
-    public Categoria() {
-        
-    }
-
-    public int getCategoriaId() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+   
     
     
 }

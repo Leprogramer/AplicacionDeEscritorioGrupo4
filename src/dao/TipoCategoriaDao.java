@@ -5,37 +5,36 @@
  */
 package dao;
 
-
-import interfaces.CategoriaInterface;
+import interfaces.TipoCategoriaInterface;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import modelo.Categoria;
-
+import modelo.TipoCategoria;
 
 /**
  *
  * @author Julius
  */
-public class CategoriaDao implements CategoriaInterface{
-  private String mensaje; //mensaje insert, update, delete
-    private Categoria datosBusqueda; //cuando se haga una busqueda los datos se almacenaran en este objeto y se retornara
+public abstract class TipoCategoriaDao implements TipoCategoriaInterface {
+    
+    private String mensaje; //mensaje insert, update, delete
+    private TipoCategoria datosBusqueda; //cuando se haga una busqueda los datos se almacenaran en este objeto y se retornara
     
     private ConexionAzure conexion = new ConexionAzure(); // conexion con la base de datos remota en Azure
     private PreparedStatement ejecutar; //preparar y ejecutar el SQL en la base de datos
     private ResultSet resultadoSelect; //Ejecutar y almacenar los Select
     private String sql; //colocar el SQL
     private int cantidadRegistros; //conocer la cantidad de registros afectados por el SQL
-     
-     public String agregarCategoria (Categoria categoria) {
+    
+    
+    public String agregarTipoCategoria (TipoCategoria tipoCategoria) {
         try {
             conexion.abrirConexion();
-            sql = "insert into categoria (categoria_id, nombre, tipo_categoria) values(?,?,?)";//por cada campo se coloca una incognita
+            sql = "insert into tipo_categoria(tipo_categoria_id, nombre) values(?,?)";//por cada campo se coloca una incognita
             ejecutar = conexion.getMiConexion().prepareStatement(sql);
             //asignar valores para las incognitas
-            ejecutar.setInt(1, categoria.getCategoriaId());
-            ejecutar.setString(2, categoria.getNombre());
-            ejecutar.setInt(3, categoria.getTipo_categoria_id());
+            ejecutar.setInt(1, tipoCategoria.getTipoCategoria());
+            ejecutar.setString (2, tipoCategoria.getNombre());
             
             //ejecutar el codigo
             cantidadRegistros=ejecutar.executeUpdate();
@@ -46,32 +45,32 @@ public class CategoriaDao implements CategoriaInterface{
             }            
         } catch (SQLException ex) {
             //Logger.getLogger(UsuarioDao.class.getName()).log(Level.SEVERE, null, ex);
-            System.out.println("CategoriaDao, error en metodo agregarUsuario: " + ex);
-            mensaje ="Error al agregar mes";
+            System.out.println("TipoCategoriaDao, error en metodo agregarUsuario: " + ex);
+            mensaje ="Error al agregar nombre";
         }finally{
              conexion.cerrarConexion();
          }
         return mensaje;
     }
     
-    public String eliminarCategoria(Categoria categoria) {
+      public String eliminarTipoCategoria(TipoCategoria tipoCategoria) {
          try {
             conexion.abrirConexion();
-            sql = "delete from categoria where categoria_id=?";//por cada campo se coloca una incognita
+            sql = "delete from tipo_categoria where tipo_categoria_id=?";//por cada campo se coloca una incognita
             ejecutar = conexion.getMiConexion().prepareStatement(sql);
             //asignar valores para las incognitas
-            ejecutar.setInt(1, categoria.getCategoriaId());
+            ejecutar.setInt(1, tipoCategoria.getTipoCategoria());
              //ejecutar el codigo
             cantidadRegistros=ejecutar.executeUpdate();
             if (cantidadRegistros>0) {
                 mensaje="Nombre eliminado con éxito";
             }else{
-                mensaje="No se pudo eliminar el nombre, el id no existe";
+                mensaje="No se pudo eliminar el Nombre, el id no existe";
             }            
         } catch (SQLException ex) {
             //Logger.getLogger(UsuarioDao.class.getName()).log(Level.SEVERE, null, ex);
-            System.out.println("CategoriaDao, error en metodo eliminarNombre: " + ex);
-            mensaje ="Error al eliminar usuario";
+            System.out.println("TipoCategoriaDao, error en metodo eliminarNombre: " + ex);
+            mensaje ="Error al eliminar Nombre";
         }finally{
              conexion.cerrarConexion();
          }
@@ -79,16 +78,15 @@ public class CategoriaDao implements CategoriaInterface{
         return mensaje;
     }
     
-     public String actualizarCategoria (Categoria categoria) {
+    public String actualizarTipoCategoria (TipoCategoria tipoCategoria) {
           try {
             conexion.abrirConexion();
-            sql = "update categoria set nombre=? , tipo_categoria-id=? where nombre = ?";//por cada campo se coloca una incognita
+            sql = "update tipo_categoria set nombre=?  where tipo_categoria_id = ?";//por cada campo se coloca una incognita
             ejecutar = conexion.getMiConexion().prepareStatement(sql);
             //asignar valores para las incognitas
             
-            ejecutar.setString (1, categoria.getNombre());
-            ejecutar.setInt(2, categoria.getTipo_categoria_id());
-            ejecutar.setInt(3, categoria.getCategoriaId());
+            ejecutar.setString(1, tipoCategoria.getNombre());
+            ejecutar.setInt(2, tipoCategoria.getTipoCategoria());
             
             //ejecutar el codigo
             cantidadRegistros=ejecutar.executeUpdate();
@@ -99,53 +97,44 @@ public class CategoriaDao implements CategoriaInterface{
             }            
         } catch (SQLException ex) {
             //Logger.getLogger(UsuarioDao.class.getName()).log(Level.SEVERE, null, ex);
-            System.out.println("CategoriaMesDao, error en metodo modificarMes: " + ex);
-            mensaje ="Error al modificar usuario";
+            System.out.println("TipoCategoriaDao, error en metodo modificarNombre: " + ex);
+            mensaje ="Error al modificar Nombre";
         }finally{
              conexion.cerrarConexion();
          }
         return mensaje;
     }
-
-    public Categoria buscarCategoria(Categoria categoria) {
+    
+     public TipoCategoria buscartipoCategoria(TipoCategoria tipoCategoria) {
         try {
             conexion.abrirConexion();
-            sql = "select * from categoria where categoria_id = ?";//por cada campo se coloca una incognita
+            sql = "select * from tipo_categoria where tipo_categoria_id = ?";//por cada campo se coloca una incognita
             ejecutar = conexion.getMiConexion().prepareStatement(sql);
             //asignar valores para las incognitas
-             ejecutar.setInt(1, categoria.getCategoriaId());
+             ejecutar.setInt(1, tipoCategoria.getTipoCategoria());
             //ejecutar el codigo
             resultadoSelect = ejecutar.executeQuery();
             resultadoSelect.next(); // posicionarse en el primer registro
             //asignar datos localizados al objeto
-            datosBusqueda = new Categoria();
-                     
-            datosBusqueda.setCategoriaId(resultadoSelect.getInt("categoria_id"));
+            datosBusqueda=new TipoCategoria();
+           
+            datosBusqueda.setTipoCategoria(resultadoSelect.getInt("tipo_categoria"));
             datosBusqueda.setNombre ( resultadoSelect.getString("nombre"));
-            datosBusqueda.setTipo_categoria_id (resultadoSelect.getInt ("tipo_categoria_id"));
             
             
             
         } catch (SQLException ex) {
             //Logger.getLogger(UsuarioDao.class.getName()).log(Level.SEVERE, null, ex);
-            System.out.println("CategoriaDao, error en metodo modificarUsuario: " + ex);
-            datosBusqueda=new Categoria(); //Unicamente se inicia el objeto
+            System.out.println("TipoCategoriaDao, error en metodo modificarNombre: " + ex);
+            datosBusqueda=new TipoCategoria();//Unicamente se inicia el objeto
            
         }finally{
              conexion.cerrarConexion();
          }
         return datosBusqueda;
+        
+        
+        
     }
-
-    @Override
-    public String actualizarCategorias(Categoria categoria) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-    
-    
-    
-    
-    
-    
     
 }

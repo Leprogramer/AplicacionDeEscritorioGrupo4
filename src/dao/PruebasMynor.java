@@ -22,10 +22,9 @@ public class PruebasMynor {
         Usuario datosLocalizado = new Usuario();//colocar los datos del usuario cuando se realice una busqueda
         
         //eliminar
-        /*
+     
         usuario.setUsuarioId(5);
         mensaje = usuarioDao.eliminarUsuario(usuario);
-        */
         
         
         //insertar
@@ -54,9 +53,10 @@ public class PruebasMynor {
                 
         System.out.println(mensaje);
         */
-        //Buscar
+        /*Buscar
         usuario.setUsuarioId(3);
         datosLocalizado = usuarioDao.buscarUsuario(usuario);
         System.out.println(datosLocalizado.toString());
+        */
     }
 }
