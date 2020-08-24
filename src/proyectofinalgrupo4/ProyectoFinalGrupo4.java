@@ -5,6 +5,10 @@
  */
 package proyectofinalgrupo4;
 
+import controlador.UsuarioControlador;
+import java.util.Locale;
+import vista.JFrmUsuario;
+
 /**
  *
  * @author admin
@@ -16,6 +20,14 @@ public class ProyectoFinalGrupo4 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        //instanciar el formulario a mostrar al usuario
+        JFrmUsuario frmUsuario = new JFrmUsuario();
+        //instancio el controlador y le envio el formulario que solicita en en constructor
+        UsuarioControlador usuarioControlador  = new UsuarioControlador(frmUsuario);
+        //hacer visible el formulario
+        frmUsuario.setVisible(true);
+        //centrar el formulario
+        frmUsuario.setLocationRelativeTo(null);
     }
     
 }

@@ -157,7 +157,37 @@ public class UsuarioDao  implements UsuarioInterface{
 
     @Override
     public Usuario iniciarSesion(Usuario usuario) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        try {
+            conexion.abrirConexion();
+            sql = "select * from usuarios where nombre_usuario =? and contrasenia=md5(?)";//por cada campo se coloca una incognita
+            ejecutar = conexion.getMiConexion().prepareStatement(sql);
+            //asignar valores para las incognitas
+            ejecutar.setString(1, usuario.getNombreUsuario());
+            ejecutar.setString(2,usuario.getContrasenia());
+            //ejecutar el codigo
+            resultadoSelect = ejecutar.executeQuery();
+            resultadoSelect.next(); // posicionarse en el primer registro
+            //asignar datos localizados al objeto
+            datosBusqueda=new Usuario();
+            datosBusqueda.setUsuarioId(resultadoSelect.getInt("usuario_id"));
+            datosBusqueda.setNombre(resultadoSelect.getString("nombre"));
+            datosBusqueda.setApellido(resultadoSelect.getString("apellido"));
+            datosBusqueda.setPaisId(resultadoSelect.getInt("pais_id"));
+            datosBusqueda.setTipoUsuario(resultadoSelect.getInt("tipo_usuario_id"));
+            datosBusqueda.setContrasenia(resultadoSelect.getString("contrasenia"));
+            datosBusqueda.setNombreUsuario(resultadoSelect.getString("nombre_usuario"));
+            
+            
+        } catch (SQLException ex) {
+            //Logger.getLogger(UsuarioDao.class.getName()).log(Level.SEVERE, null, ex);
+            System.out.println("UsuarioDao, error en metodo iniciarSesion: " + ex);
+            datosBusqueda=new Usuario();//Unicamente se inicia el objeto
+           
+        }finally{
+             conexion.cerrarConexion();
+         }
+        return datosBusqueda;
     }
+    
     
 }
