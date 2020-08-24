@@ -40,12 +40,12 @@ public class PruebasJulio {
         System.out.println(mensaje);
         */
         
-       /*
+      
         //Buscar
         categoriaMes.setCorrelativo(15);
         datosLocalizado = dao.buscarCategoriaMes(categoriaMes);
         System.out.println(datosLocalizado.toString());
-      */
+      
         
         /*
       categoriaMes.setCorrelativo(15);
