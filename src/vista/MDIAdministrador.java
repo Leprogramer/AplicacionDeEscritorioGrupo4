@@ -65,8 +65,6 @@ public class MDIAdministrador extends javax.swing.JFrame {
 
     private void mnuGastosPlanificadosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuGastosPlanificadosActionPerformed
         // TODO add your handling code here:
-        JFrmGastosPlanificados formularioGastos = new JFrmGastosPlanificados();
-        formularioGastos.setVisible(true);
     }//GEN-LAST:event_mnuGastosPlanificadosActionPerformed
 
     /**

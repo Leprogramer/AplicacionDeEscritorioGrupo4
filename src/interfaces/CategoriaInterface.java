@@ -5,6 +5,7 @@
  */
 package interfaces;
 
+import java.util.ArrayList;
 import modelo.Categoria;
 
 /**
@@ -17,5 +18,6 @@ public interface CategoriaInterface {
     public String eliminarCategoria (Categoria categoria);
     public String actualizarCategorias (Categoria categoria);
     public Categoria buscarCategoria(Categoria categoria);
+    public ArrayList<Categoria> listarCategorias ();
     
 }

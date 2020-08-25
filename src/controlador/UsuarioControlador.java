@@ -6,6 +6,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JOptionPane;
 import modelo.Usuario;
+import vista.JFrmMenuPrincipal;
 import vista.JFrmUsuario;
 import vista.MDIAdministrador;
 
@@ -51,8 +52,9 @@ public class UsuarioControlador  implements ActionListener{
         //verificar si usuario y contraseña son correctos (comparo los datos del formulario con los de la busqueda
         if (usuarioSelect.getNombreUsuario().equals(usuario.getNombreUsuario())){
             //mostrar un menu de opciones
-            MDIAdministrador mdiAdministrador = new MDIAdministrador();
-            mdiAdministrador.setVisible(true);
+            JFrmMenuPrincipal frmMenu = new JFrmMenuPrincipal();
+            frmMenu.setVisible(true);
+            
         }
         
         

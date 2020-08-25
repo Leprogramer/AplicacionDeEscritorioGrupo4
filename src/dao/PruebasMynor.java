@@ -7,6 +7,10 @@ package dao;
 
 import controlador.*;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import modelo.Categoria;
+import modelo.CategoriaMes;
+import modelo.TipoCategoria;
 import modelo.Usuario;
 
 
@@ -16,6 +20,33 @@ import modelo.Usuario;
  */
 public class PruebasMynor {
     public static void main(String[] args) {
+        CategoriaMesDao dao = new CategoriaMesDao();
+        ArrayList<CategoriaMes> lista = new ArrayList();
+        lista = dao.listarCategoriasMeses();
+        for (CategoriaMes categoriaMes : lista) {
+            System.out.println(categoriaMes.toString());
+        }
+        /*
+        TipoCategoriaDao dao = new TipoCategoriaDao();
+        ArrayList<TipoCategoria> lista = new ArrayList();
+        
+        lista = dao.listarTiposCategorias();
+        for (TipoCategoria tipoCategoria : lista) {
+            System.out.println(tipoCategoria.toString());
+        }
+        */
+        /*
+        //cargar a la lista el resultado de la base de datos
+        CategoriaDao dao = new CategoriaDao();
+        ArrayList<Categoria> lista = new ArrayList();
+        
+        lista=dao.listarCategorias();
+        //recorrer toda la lista
+        for (Categoria categoria : lista) {
+            System.out.println(categoria.toString());
+        }
+        */
+        /*
         UsuarioDao usuarioDao = new UsuarioDao();
         String mensaje;
         Usuario usuario = new Usuario(); //asignar valores al usuario

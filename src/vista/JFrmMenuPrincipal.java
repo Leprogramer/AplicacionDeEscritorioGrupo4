@@ -5,12 +5,16 @@
  */
 package vista;
 
+import controlador.IngresosPlanificadosControlador;
+
 /**
  *
  * @author Julius
  */
 public class JFrmMenuPrincipal extends javax.swing.JFrame {
 
+    JFrmIngresosPlanificados vistaIngresosPlanificados = new JFrmIngresosPlanificados();
+    
     /**
      * Creates new form NewJFrmMenuPrincipal
      */
@@ -28,9 +32,7 @@ public class JFrmMenuPrincipal extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
-        jBtnIngresosPlanificados = new javax.swing.JButton();
         jBtnGastosDiarios = new javax.swing.JButton();
-        jBtnGastosPlanificados = new javax.swing.JButton();
         jBtnFinDeMes = new javax.swing.JButton();
         jBtnObjetivoFinanciero = new javax.swing.JButton();
 
@@ -39,24 +41,10 @@ public class JFrmMenuPrincipal extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
         jLabel1.setText("Menu Principal ");
 
-        jBtnIngresosPlanificados.setText("Ingresos Planificados");
-        jBtnIngresosPlanificados.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBtnIngresosPlanificadosActionPerformed(evt);
-            }
-        });
-
-        jBtnGastosDiarios.setText("Registro de Gastos Diarios");
+        jBtnGastosDiarios.setText("Registrar Ingresos y Egresos");
         jBtnGastosDiarios.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBtnGastosDiariosActionPerformed(evt);
-            }
-        });
-
-        jBtnGastosPlanificados.setText("Gastos Planificados");
-        jBtnGastosPlanificados.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBtnGastosPlanificadosActionPerformed(evt);
             }
         });
 
@@ -84,8 +72,6 @@ public class JFrmMenuPrincipal extends javax.swing.JFrame {
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jBtnGastosDiarios, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jBtnIngresosPlanificados, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jBtnGastosPlanificados, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jBtnFinDeMes, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jBtnObjetivoFinanciero, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGap(124, 124, 124))
@@ -100,31 +86,22 @@ public class JFrmMenuPrincipal extends javax.swing.JFrame {
                 .addComponent(jLabel1)
                 .addGap(27, 27, 27)
                 .addComponent(jBtnGastosDiarios)
-                .addGap(20, 20, 20)
-                .addComponent(jBtnIngresosPlanificados)
-                .addGap(18, 18, 18)
-                .addComponent(jBtnGastosPlanificados)
                 .addGap(18, 18, 18)
                 .addComponent(jBtnObjetivoFinanciero)
                 .addGap(18, 18, 18)
                 .addComponent(jBtnFinDeMes)
-                .addContainerGap(49, Short.MAX_VALUE))
+                .addContainerGap(133, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jBtnIngresosPlanificadosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnIngresosPlanificadosActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jBtnIngresosPlanificadosActionPerformed
-
     private void jBtnGastosDiariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnGastosDiariosActionPerformed
         // TODO add your handling code here:
+        
+        IngresosPlanificadosControlador controladorIngresosEgresos = new IngresosPlanificadosControlador(vistaIngresosPlanificados);
+        vistaIngresosPlanificados.setVisible(true);
     }//GEN-LAST:event_jBtnGastosDiariosActionPerformed
-
-    private void jBtnGastosPlanificadosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnGastosPlanificadosActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jBtnGastosPlanificadosActionPerformed
 
     private void jBtnFinDeMesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnFinDeMesActionPerformed
         // TODO add your handling code here:
@@ -173,8 +150,6 @@ public class JFrmMenuPrincipal extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public javax.swing.JButton jBtnFinDeMes;
     public javax.swing.JButton jBtnGastosDiarios;
-    public javax.swing.JButton jBtnGastosPlanificados;
-    public javax.swing.JButton jBtnIngresosPlanificados;
     public javax.swing.JButton jBtnObjetivoFinanciero;
     private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables

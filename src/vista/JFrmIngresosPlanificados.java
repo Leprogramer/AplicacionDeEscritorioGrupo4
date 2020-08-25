@@ -27,185 +27,241 @@ public class JFrmIngresosPlanificados extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jBtnEliminarIngresosPlanificados = new javax.swing.JButton();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTable1 = new javax.swing.JTable();
         jLabel2 = new javax.swing.JLabel();
-        jBtnSumarIngresosPlanificados = new javax.swing.JButton();
+        jBtnGuardarIngresosEgresos = new javax.swing.JButton();
         jBtnHomeIngresosPlanificados = new javax.swing.JButton();
-        jTxtResultadoIngresos = new javax.swing.JTextField();
         jTxtMontoIngresoIngresosPlanificados = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
-        jTxtMesIngresosPlanificados = new javax.swing.JTextField();
-        jTxtAnioIngresosPlanificados = new javax.swing.JTextField();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
-        jTxtTipoIngresoIngresosPlanificados = new javax.swing.JTextField();
+        jDateIngresosEgresos = new com.toedter.calendar.JDateChooser();
+        jLabel7 = new javax.swing.JLabel();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jTblIngresosEgresos = new javax.swing.JTable();
+        jBtnEliminarIngresosEgresos = new javax.swing.JButton();
+        jBtnModificarIngresosEgresos = new javax.swing.JButton();
+        jBtnVerIngresosEgresos = new javax.swing.JButton();
+        jCmbCategoria = new javax.swing.JComboBox<>();
+        jLabel8 = new javax.swing.JLabel();
+        jCmbTipoCategoria = new javax.swing.JComboBox<>();
+        jLblCodigoTipoCategoria = new javax.swing.JLabel();
+        jLblCodigoCategoria = new javax.swing.JLabel();
+
+        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Title 1", "Title 2", "Title 3", "Title 4"
+            }
+        ));
+        jScrollPane1.setViewportView(jTable1);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jBtnEliminarIngresosPlanificados.setText("Restar");
-        jBtnEliminarIngresosPlanificados.addActionListener(new java.awt.event.ActionListener() {
+        jLabel2.setFont(new java.awt.Font("Arial Black", 0, 36)); // NOI18N
+        jLabel2.setText("Control de Ingresos y Egresos");
+
+        jBtnGuardarIngresosEgresos.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jBtnGuardarIngresosEgresos.setText("Guardar");
+        jBtnGuardarIngresosEgresos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBtnEliminarIngresosPlanificadosActionPerformed(evt);
+                jBtnGuardarIngresosEgresosActionPerformed(evt);
             }
         });
 
-        jLabel2.setFont(new java.awt.Font("Arial Black", 0, 18)); // NOI18N
-        jLabel2.setText("Ingresos Planificados");
-
-        jBtnSumarIngresosPlanificados.setText("Sumar");
-        jBtnSumarIngresosPlanificados.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBtnSumarIngresosPlanificadosActionPerformed(evt);
-            }
-        });
-
+        jBtnHomeIngresosPlanificados.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jBtnHomeIngresosPlanificados.setText("Home");
 
-        jTxtResultadoIngresos.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTxtResultadoIngresosActionPerformed(evt);
-            }
-        });
-
+        jTxtMontoIngresoIngresosPlanificados.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jTxtMontoIngresoIngresosPlanificados.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTxtMontoIngresoIngresosPlanificadosActionPerformed(evt);
             }
         });
 
-        jLabel3.setText("Monto del Ingreso");
+        jLabel3.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel3.setText("Monto:");
 
-        jTxtMesIngresosPlanificados.addActionListener(new java.awt.event.ActionListener() {
+        jLabel6.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel6.setText("Categoria:");
+
+        jDateIngresosEgresos.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+
+        jLabel7.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel7.setText("Fecha:");
+
+        jTblIngresosEgresos.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Title 1", "Title 2", "Title 3", "Title 4"
+            }
+        ));
+        jScrollPane2.setViewportView(jTblIngresosEgresos);
+
+        jBtnEliminarIngresosEgresos.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jBtnEliminarIngresosEgresos.setText("Eliminar");
+        jBtnEliminarIngresosEgresos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTxtMesIngresosPlanificadosActionPerformed(evt);
+                jBtnEliminarIngresosEgresosActionPerformed(evt);
             }
         });
 
-        jTxtAnioIngresosPlanificados.addActionListener(new java.awt.event.ActionListener() {
+        jBtnModificarIngresosEgresos.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jBtnModificarIngresosEgresos.setText("Modificar");
+        jBtnModificarIngresosEgresos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTxtAnioIngresosPlanificadosActionPerformed(evt);
+                jBtnModificarIngresosEgresosActionPerformed(evt);
             }
         });
 
-        jLabel4.setText("Mes");
-
-        jLabel5.setText("Año");
-
-        jLabel6.setText("Tipo de Ingreso");
-
-        jTxtTipoIngresoIngresosPlanificados.addActionListener(new java.awt.event.ActionListener() {
+        jBtnVerIngresosEgresos.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jBtnVerIngresosEgresos.setText("Ver");
+        jBtnVerIngresosEgresos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTxtTipoIngresoIngresosPlanificadosActionPerformed(evt);
+                jBtnVerIngresosEgresosActionPerformed(evt);
             }
         });
+
+        jCmbCategoria.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jCmbCategoria.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+
+        jLabel8.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel8.setText("Tipo Categorias: ");
+
+        jCmbTipoCategoria.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jCmbTipoCategoria.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jCmbTipoCategoria.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCmbTipoCategoriaActionPerformed(evt);
+            }
+        });
+
+        jLblCodigoTipoCategoria.setText("codTipo");
+
+        jLblCodigoCategoria.setText("codCategoria");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel2)
-                .addGap(80, 80, 80))
             .addGroup(layout.createSequentialGroup()
-                .addGap(44, 44, 44)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel3)
-                                .addGap(18, 18, 18))
+                                .addGap(45, 45, 45)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(jLabel7)
+                                    .addComponent(jLabel8)
+                                    .addComponent(jLabel6)
+                                    .addComponent(jLabel3))
+                                .addGap(29, 29, 29))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addComponent(jLabel6)
-                                .addGap(26, 26, 26)))
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jTxtMontoIngresoIngresosPlanificados, javax.swing.GroupLayout.DEFAULT_SIZE, 191, Short.MAX_VALUE)
-                            .addComponent(jTxtTipoIngresoIngresosPlanificados)))
-                    .addGroup(layout.createSequentialGroup()
+                                .addContainerGap()
+                                .addComponent(jBtnGuardarIngresosEgresos, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)))
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel4)
-                            .addComponent(jLabel5))
-                        .addGap(27, 27, 27)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jTxtAnioIngresosPlanificados, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTxtMesIngresosPlanificados, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addGroup(layout.createSequentialGroup()
-                            .addComponent(jBtnHomeIngresosPlanificados, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(106, 106, 106))
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(jBtnSumarIngresosPlanificados, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jBtnEliminarIngresosPlanificados, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jTxtResultadoIngresos, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 296, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(60, Short.MAX_VALUE))
+                                .addComponent(jBtnEliminarIngresosEgresos, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jBtnModificarIngresosEgresos, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jBtnVerIngresosEgresos, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jCmbTipoCategoria, javax.swing.GroupLayout.PREFERRED_SIZE, 344, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(jLblCodigoTipoCategoria))
+                            .addComponent(jDateIngresosEgresos, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                    .addComponent(jTxtMontoIngresoIngresosPlanificados, javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jCmbCategoria, javax.swing.GroupLayout.Alignment.LEADING, 0, 344, Short.MAX_VALUE))
+                                .addGap(18, 18, 18)
+                                .addComponent(jLblCodigoCategoria))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(34, 34, 34)
+                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 637, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(65, 65, 65)
+                        .addComponent(jBtnHomeIngresosPlanificados, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(55, 55, 55)
+                        .addComponent(jLabel2)))
+                .addContainerGap(41, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(32, 32, 32)
+                .addGap(36, 36, 36)
                 .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(22, 22, 22)
+                .addGap(36, 36, 36)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel4)
-                            .addComponent(jTxtMesIngresosPlanificados, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(38, 38, 38))
+                    .addComponent(jDateIngresosEgresos, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel7))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jLabel5)
-                        .addComponent(jTxtAnioIngresosPlanificados, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 20, Short.MAX_VALUE)
+                        .addComponent(jLabel8)
+                        .addComponent(jCmbTipoCategoria, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLblCodigoTipoCategoria, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(14, 14, 14)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jCmbCategoria, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel6)
-                    .addComponent(jTxtTipoIngresoIngresosPlanificados, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
+                    .addComponent(jLblCodigoCategoria, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
                     .addComponent(jTxtMontoIngresoIngresosPlanificados, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(27, 27, 27)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jBtnSumarIngresosPlanificados)
-                    .addComponent(jBtnEliminarIngresosPlanificados))
                 .addGap(18, 18, 18)
-                .addComponent(jTxtResultadoIngresos, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(32, 32, 32)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jBtnVerIngresosEgresos)
+                    .addComponent(jBtnModificarIngresosEgresos)
+                    .addComponent(jBtnEliminarIngresosEgresos)
+                    .addComponent(jBtnGuardarIngresosEgresos))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 46, Short.MAX_VALUE)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(28, 28, 28)
                 .addComponent(jBtnHomeIngresosPlanificados)
-                .addGap(20, 20, 20))
+                .addGap(27, 27, 27))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTxtResultadoIngresosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTxtResultadoIngresosActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTxtResultadoIngresosActionPerformed
-
     private void jTxtMontoIngresoIngresosPlanificadosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTxtMontoIngresoIngresosPlanificadosActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTxtMontoIngresoIngresosPlanificadosActionPerformed
 
-    private void jTxtMesIngresosPlanificadosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTxtMesIngresosPlanificadosActionPerformed
+    private void jBtnGuardarIngresosEgresosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnGuardarIngresosEgresosActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTxtMesIngresosPlanificadosActionPerformed
+    }//GEN-LAST:event_jBtnGuardarIngresosEgresosActionPerformed
 
-    private void jTxtAnioIngresosPlanificadosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTxtAnioIngresosPlanificadosActionPerformed
+    private void jBtnEliminarIngresosEgresosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnEliminarIngresosEgresosActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTxtAnioIngresosPlanificadosActionPerformed
+    }//GEN-LAST:event_jBtnEliminarIngresosEgresosActionPerformed
 
-    private void jTxtTipoIngresoIngresosPlanificadosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTxtTipoIngresoIngresosPlanificadosActionPerformed
+    private void jBtnModificarIngresosEgresosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnModificarIngresosEgresosActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTxtTipoIngresoIngresosPlanificadosActionPerformed
+    }//GEN-LAST:event_jBtnModificarIngresosEgresosActionPerformed
 
-    private void jBtnSumarIngresosPlanificadosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnSumarIngresosPlanificadosActionPerformed
+    private void jBtnVerIngresosEgresosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnVerIngresosEgresosActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jBtnSumarIngresosPlanificadosActionPerformed
+    }//GEN-LAST:event_jBtnVerIngresosEgresosActionPerformed
 
-    private void jBtnEliminarIngresosPlanificadosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnEliminarIngresosPlanificadosActionPerformed
+    private void jCmbTipoCategoriaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCmbTipoCategoriaActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jBtnEliminarIngresosPlanificadosActionPerformed
+    }//GEN-LAST:event_jCmbTipoCategoriaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -250,18 +306,25 @@ public class JFrmIngresosPlanificados extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    public javax.swing.JButton jBtnEliminarIngresosPlanificados;
+    public javax.swing.JButton jBtnEliminarIngresosEgresos;
+    public javax.swing.JButton jBtnGuardarIngresosEgresos;
     public javax.swing.JButton jBtnHomeIngresosPlanificados;
-    public javax.swing.JButton jBtnSumarIngresosPlanificados;
+    public javax.swing.JButton jBtnModificarIngresosEgresos;
+    public javax.swing.JButton jBtnVerIngresosEgresos;
+    public javax.swing.JComboBox<String> jCmbCategoria;
+    public javax.swing.JComboBox<String> jCmbTipoCategoria;
+    public com.toedter.calendar.JDateChooser jDateIngresosEgresos;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
-    public javax.swing.JTextField jTxtAnioIngresosPlanificados;
-    public javax.swing.JTextField jTxtMesIngresosPlanificados;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    public javax.swing.JLabel jLblCodigoCategoria;
+    public javax.swing.JLabel jLblCodigoTipoCategoria;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JTable jTable1;
+    public javax.swing.JTable jTblIngresosEgresos;
     public javax.swing.JTextField jTxtMontoIngresoIngresosPlanificados;
-    public javax.swing.JTextField jTxtResultadoIngresos;
-    public javax.swing.JTextField jTxtTipoIngresoIngresosPlanificados;
     // End of variables declaration//GEN-END:variables
 }

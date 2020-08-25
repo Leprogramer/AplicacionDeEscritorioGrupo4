@@ -12,7 +12,17 @@
     </editor-bookmarks>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/AplicacionDeEscritorioGrupo4/src/vista/JFrmIngresosPlanificados.java</file>
+            <file>file:/D:/Documents/GitHub/AplicacionDeEscritorioGrupo4/src/vista/RegistroDeGastosDiarios.java</file>
+            <file>file:/D:/Documents/GitHub/AplicacionDeEscritorioGrupo4/src/dao/PruebasMynor.java</file>
+            <file>file:/D:/Documents/GitHub/AplicacionDeEscritorioGrupo4/src/proyectofinalgrupo4/ProyectoFinalGrupo4.java</file>
+            <file>file:/D:/Documents/GitHub/AplicacionDeEscritorioGrupo4/src/controlador/IngresosPlanificadosControlador.java</file>
+            <file>file:/D:/Documents/GitHub/AplicacionDeEscritorioGrupo4/src/vista/MDIAdministrador.java</file>
+            <file>file:/D:/Documents/GitHub/AplicacionDeEscritorioGrupo4/src/vista/JFrmUsuario.java</file>
+            <file>file:/D:/Documents/GitHub/AplicacionDeEscritorioGrupo4/src/dao/UsuarioDao.java</file>
+            <file>file:/D:/Documents/GitHub/AplicacionDeEscritorioGrupo4/src/dao/PruebasJulio.java</file>
+            <file>file:/D:/Documents/GitHub/AplicacionDeEscritorioGrupo4/src/dao/CategoriaMesDao.java</file>
+            <file>file:/D:/Documents/GitHub/AplicacionDeEscritorioGrupo4/src/vista/MDISupervisor.java</file>
+            <file>file:/D:/Documents/GitHub/AplicacionDeEscritorioGrupo4/src/controlador/UsuarioControlador.java</file>
         </group>
     </open-files>
 </project-private>

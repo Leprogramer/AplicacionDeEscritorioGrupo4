@@ -29,8 +29,6 @@
                   <Group type="102" alignment="1" attributes="0">
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
                           <Component id="jBtnGastosDiarios" max="32767" attributes="0"/>
-                          <Component id="jBtnIngresosPlanificados" max="32767" attributes="0"/>
-                          <Component id="jBtnGastosPlanificados" alignment="0" max="32767" attributes="0"/>
                           <Component id="jBtnFinDeMes" alignment="1" max="32767" attributes="0"/>
                           <Component id="jBtnObjetivoFinanciero" alignment="1" max="32767" attributes="0"/>
                       </Group>
@@ -51,15 +49,11 @@
               <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
               <Component id="jBtnGastosDiarios" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
-              <Component id="jBtnIngresosPlanificados" min="-2" max="-2" attributes="0"/>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Component id="jBtnGastosPlanificados" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Component id="jBtnObjetivoFinanciero" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Component id="jBtnFinDeMes" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="49" max="32767" attributes="0"/>
+              <EmptySpace pref="133" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -73,34 +67,12 @@
         <Property name="text" type="java.lang.String" value="Menu Principal "/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jBtnIngresosPlanificados">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Ingresos Planificados"/>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBtnIngresosPlanificadosActionPerformed"/>
-      </Events>
-      <AuxValues>
-        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
-      </AuxValues>
-    </Component>
     <Component class="javax.swing.JButton" name="jBtnGastosDiarios">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Registro de Gastos Diarios"/>
+        <Property name="text" type="java.lang.String" value="Registrar Ingresos y Egresos"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBtnGastosDiariosActionPerformed"/>
-      </Events>
-      <AuxValues>
-        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
-      </AuxValues>
-    </Component>
-    <Component class="javax.swing.JButton" name="jBtnGastosPlanificados">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Gastos Planificados"/>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBtnGastosPlanificadosActionPerformed"/>
       </Events>
       <AuxValues>
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>

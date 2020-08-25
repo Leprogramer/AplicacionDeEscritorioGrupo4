@@ -5,6 +5,7 @@
  */
 package interfaces;
 
+import java.util.ArrayList;
 import modelo.TipoCategoria;
 
 /**
@@ -16,8 +17,7 @@ public interface TipoCategoriaInterface {
     public String eliminarTipoCategoria(TipoCategoria tipoCategoria);
     public String actualizarTipoCategoria(TipoCategoria tipoCategoria);
     public  TipoCategoria buscarTipoCategoria(TipoCategoria tipoCategoria);
-    
-    
-    
+    public ArrayList<TipoCategoria> listarTiposCategorias();
+   
     
 }
