@@ -12,14 +12,7 @@
     </editor-bookmarks>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/AplicacionDeEscritorioGrupo4/src/dao/PruebasEdgar.java</file>
-            <file>file:/D:/AplicacionDeEscritorioGrupo4/src/vista/Main.java</file>
-            <file>file:/D:/AplicacionDeEscritorioGrupo4/src/dao/PruebasJulio.java</file>
-            <file>file:/D:/AplicacionDeEscritorioGrupo4/src/dao/TipoCategoriaDao.java</file>
-            <file>file:/D:/AplicacionDeEscritorioGrupo4/src/vista/JFrmUsuario.java</file>
-            <file>file:/D:/AplicacionDeEscritorioGrupo4/src/vista/JFrmPais.java</file>
-            <file>file:/D:/AplicacionDeEscritorioGrupo4/src/vista/IngresosPlanificados.java</file>
-            <file>file:/D:/AplicacionDeEscritorioGrupo4/src/dao/PruebasMynor.java</file>
+            <file>file:/D:/AplicacionDeEscritorioGrupo4/src/vista/JFrmIngresosPlanificados.java</file>
         </group>
     </open-files>
 </project-private>

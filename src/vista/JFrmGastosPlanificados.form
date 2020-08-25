@@ -43,8 +43,8 @@
                           </Group>
                       </Group>
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="jTxtMontoIngresoIngresosPlanificados" pref="191" max="32767" attributes="0"/>
-                          <Component id="jTxtTipoIngresoIngresosPlanificados" max="32767" attributes="0"/>
+                          <Component id="jTxtMontoGastosPlanificados" pref="191" max="32767" attributes="0"/>
+                          <Component id="jTxtTipoGastosPlanificados" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
@@ -54,22 +54,22 @@
                       </Group>
                       <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jTxtAnioIngresosPlanificados" min="-2" pref="133" max="-2" attributes="0"/>
-                          <Component id="jTxtMesIngresosPlanificados" min="-2" pref="133" max="-2" attributes="0"/>
+                          <Component id="jTxtAnioGastosPlanificados" min="-2" pref="133" max="-2" attributes="0"/>
+                          <Component id="jTxtMesGastosPlanificados" min="-2" pref="133" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <Group type="103" alignment="0" groupAlignment="1" attributes="0">
                       <Group type="102" attributes="0">
-                          <Component id="jBtnHomeIngresosPlanificados" min="-2" pref="75" max="-2" attributes="0"/>
+                          <Component id="jBtnHomeGastosPlanificados" min="-2" pref="75" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="106" max="-2" attributes="0"/>
                       </Group>
                       <Group type="103" groupAlignment="1" max="-2" attributes="0">
                           <Group type="102" attributes="0">
-                              <Component id="jBtnSumarIngresosPlanificados" min="-2" pref="90" max="-2" attributes="0"/>
+                              <Component id="jBtnSumarGastosPlanificados" min="-2" pref="90" max="-2" attributes="0"/>
                               <EmptySpace max="32767" attributes="0"/>
-                              <Component id="jBtnEliminarIngresosPlanificados" min="-2" pref="73" max="-2" attributes="0"/>
+                              <Component id="jBtnEliminarGastosPlanificados" min="-2" pref="73" max="-2" attributes="0"/>
                           </Group>
-                          <Component id="jTxtResultadoIngresos" alignment="0" min="-2" pref="296" max="-2" attributes="0"/>
+                          <Component id="jTxtResultadoGastosPlanificados" alignment="0" min="-2" pref="296" max="-2" attributes="0"/>
                       </Group>
                   </Group>
               </Group>
@@ -87,46 +87,46 @@
                   <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTxtMesIngresosPlanificados" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTxtMesGastosPlanificados" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
                   </Group>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jTxtAnioIngresosPlanificados" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jTxtAnioGastosPlanificados" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace pref="20" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jLabel6" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jTxtTipoIngresoIngresosPlanificados" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jTxtTipoGastosPlanificados" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jTxtMontoIngresoIngresosPlanificados" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jTxtMontoGastosPlanificados" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jBtnSumarIngresosPlanificados" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jBtnEliminarIngresosPlanificados" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jBtnSumarGastosPlanificados" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jBtnEliminarGastosPlanificados" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Component id="jTxtResultadoIngresos" min="-2" pref="75" max="-2" attributes="0"/>
+              <Component id="jTxtResultadoGastosPlanificados" min="-2" pref="75" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
-              <Component id="jBtnHomeIngresosPlanificados" min="-2" max="-2" attributes="0"/>
+              <Component id="jBtnHomeGastosPlanificados" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Component class="javax.swing.JButton" name="jBtnEliminarIngresosPlanificados">
+    <Component class="javax.swing.JButton" name="jBtnEliminarGastosPlanificados">
       <Properties>
         <Property name="text" type="java.lang.String" value="Restar"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBtnEliminarIngresosPlanificadosActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBtnEliminarGastosPlanificadosActionPerformed"/>
       </Events>
       <AuxValues>
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
@@ -137,21 +137,21 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Arial Black" size="18" style="0"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Ingresos Planificados"/>
+        <Property name="text" type="java.lang.String" value="Gastos Planificados"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jBtnSumarIngresosPlanificados">
+    <Component class="javax.swing.JButton" name="jBtnSumarGastosPlanificados">
       <Properties>
         <Property name="text" type="java.lang.String" value="Sumar"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBtnSumarIngresosPlanificadosActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBtnSumarGastosPlanificadosActionPerformed"/>
       </Events>
       <AuxValues>
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
       </AuxValues>
     </Component>
-    <Component class="javax.swing.JButton" name="jBtnHomeIngresosPlanificados">
+    <Component class="javax.swing.JButton" name="jBtnHomeGastosPlanificados">
       <Properties>
         <Property name="text" type="java.lang.String" value="Home"/>
       </Properties>
@@ -159,17 +159,17 @@
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
       </AuxValues>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTxtResultadoIngresos">
+    <Component class="javax.swing.JTextField" name="jTxtResultadoGastosPlanificados">
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTxtResultadoIngresosActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTxtResultadoGastosPlanificadosActionPerformed"/>
       </Events>
       <AuxValues>
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
       </AuxValues>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTxtMontoIngresoIngresosPlanificados">
+    <Component class="javax.swing.JTextField" name="jTxtMontoGastosPlanificados">
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTxtMontoIngresoIngresosPlanificadosActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTxtMontoGastosPlanificadosActionPerformed"/>
       </Events>
       <AuxValues>
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
@@ -177,20 +177,20 @@
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel3">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Monto del Ingreso"/>
+        <Property name="text" type="java.lang.String" value="Monto del Gasto"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTxtMesIngresosPlanificados">
+    <Component class="javax.swing.JTextField" name="jTxtMesGastosPlanificados">
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTxtMesIngresosPlanificadosActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTxtMesGastosPlanificadosActionPerformed"/>
       </Events>
       <AuxValues>
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
       </AuxValues>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTxtAnioIngresosPlanificados">
+    <Component class="javax.swing.JTextField" name="jTxtAnioGastosPlanificados">
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTxtAnioIngresosPlanificadosActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTxtAnioGastosPlanificadosActionPerformed"/>
       </Events>
       <AuxValues>
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
@@ -208,12 +208,12 @@
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel6">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Tipo de Ingreso"/>
+        <Property name="text" type="java.lang.String" value="Tipo de Gasto"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTxtTipoIngresoIngresosPlanificados">
+    <Component class="javax.swing.JTextField" name="jTxtTipoGastosPlanificados">
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTxtTipoIngresoIngresosPlanificadosActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTxtTipoGastosPlanificadosActionPerformed"/>
       </Events>
       <AuxValues>
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>

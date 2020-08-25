@@ -46,7 +46,7 @@ public class IngresosPlanificadosControlador implements ActionListener {
 }
 
     public void obtenerValores() {
-        categoriaMes.setMonto(formulario.jTxtMontoIngresoIngresosPlanificados.getText());
+        categoriaMes.setMonto(formulario.jTxtResultadoIngresos.getText());
         
     }
 }

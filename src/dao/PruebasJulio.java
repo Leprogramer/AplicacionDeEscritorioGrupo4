@@ -19,12 +19,12 @@ public class PruebasJulio {
         CategoriaMes datosLocalizado = new CategoriaMes();//colocar los datos del usuario cuando se realice una busqueda
         
         
-        /*
+      
         //Eliminar Mes
         categoriaMes.setCorrelativo(2);
         mensaje = dao.eliminarCategoriaMes(categoriaMes);
         System.out.println(mensaje);
-        */
+      
         
        /*
         //Modificar

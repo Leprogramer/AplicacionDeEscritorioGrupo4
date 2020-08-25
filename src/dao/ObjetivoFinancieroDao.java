@@ -3,12 +3,17 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package modelo;
+package dao;
 
-public class MenuPrincipal {
- public int usuario;
- public int password;
- public int iniciar;
+import modelo.ObjetivoFinanciero;
 
+/**
+ *
+ * @author Julius
+ */
+public class ObjetivoFinancieroDao {
+     
+
+    
+    
 }
-

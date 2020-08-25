@@ -9,12 +9,12 @@ package vista;
  *
  * @author edgar
  */
-public class JFrmIngresosPlanificados extends javax.swing.JFrame {
+public class JFrmGastosPlanificados extends javax.swing.JFrame {
 
     /**
      * Creates new form MenuPrincipal
      */
-    public JFrmIngresosPlanificados() {
+    public JFrmGastosPlanificados() {
         initComponents();
     }
 
@@ -27,64 +27,64 @@ public class JFrmIngresosPlanificados extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jBtnEliminarIngresosPlanificados = new javax.swing.JButton();
+        jBtnEliminarGastosPlanificados = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
-        jBtnSumarIngresosPlanificados = new javax.swing.JButton();
-        jBtnHomeIngresosPlanificados = new javax.swing.JButton();
-        jTxtResultadoIngresos = new javax.swing.JTextField();
-        jTxtMontoIngresoIngresosPlanificados = new javax.swing.JTextField();
+        jBtnSumarGastosPlanificados = new javax.swing.JButton();
+        jBtnHomeGastosPlanificados = new javax.swing.JButton();
+        jTxtResultadoGastosPlanificados = new javax.swing.JTextField();
+        jTxtMontoGastosPlanificados = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
-        jTxtMesIngresosPlanificados = new javax.swing.JTextField();
-        jTxtAnioIngresosPlanificados = new javax.swing.JTextField();
+        jTxtMesGastosPlanificados = new javax.swing.JTextField();
+        jTxtAnioGastosPlanificados = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
-        jTxtTipoIngresoIngresosPlanificados = new javax.swing.JTextField();
+        jTxtTipoGastosPlanificados = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jBtnEliminarIngresosPlanificados.setText("Restar");
-        jBtnEliminarIngresosPlanificados.addActionListener(new java.awt.event.ActionListener() {
+        jBtnEliminarGastosPlanificados.setText("Restar");
+        jBtnEliminarGastosPlanificados.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBtnEliminarIngresosPlanificadosActionPerformed(evt);
+                jBtnEliminarGastosPlanificadosActionPerformed(evt);
             }
         });
 
         jLabel2.setFont(new java.awt.Font("Arial Black", 0, 18)); // NOI18N
-        jLabel2.setText("Ingresos Planificados");
+        jLabel2.setText("Gastos Planificados");
 
-        jBtnSumarIngresosPlanificados.setText("Sumar");
-        jBtnSumarIngresosPlanificados.addActionListener(new java.awt.event.ActionListener() {
+        jBtnSumarGastosPlanificados.setText("Sumar");
+        jBtnSumarGastosPlanificados.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBtnSumarIngresosPlanificadosActionPerformed(evt);
+                jBtnSumarGastosPlanificadosActionPerformed(evt);
             }
         });
 
-        jBtnHomeIngresosPlanificados.setText("Home");
+        jBtnHomeGastosPlanificados.setText("Home");
 
-        jTxtResultadoIngresos.addActionListener(new java.awt.event.ActionListener() {
+        jTxtResultadoGastosPlanificados.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTxtResultadoIngresosActionPerformed(evt);
+                jTxtResultadoGastosPlanificadosActionPerformed(evt);
             }
         });
 
-        jTxtMontoIngresoIngresosPlanificados.addActionListener(new java.awt.event.ActionListener() {
+        jTxtMontoGastosPlanificados.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTxtMontoIngresoIngresosPlanificadosActionPerformed(evt);
+                jTxtMontoGastosPlanificadosActionPerformed(evt);
             }
         });
 
-        jLabel3.setText("Monto del Ingreso");
+        jLabel3.setText("Monto del Gasto");
 
-        jTxtMesIngresosPlanificados.addActionListener(new java.awt.event.ActionListener() {
+        jTxtMesGastosPlanificados.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTxtMesIngresosPlanificadosActionPerformed(evt);
+                jTxtMesGastosPlanificadosActionPerformed(evt);
             }
         });
 
-        jTxtAnioIngresosPlanificados.addActionListener(new java.awt.event.ActionListener() {
+        jTxtAnioGastosPlanificados.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTxtAnioIngresosPlanificadosActionPerformed(evt);
+                jTxtAnioGastosPlanificadosActionPerformed(evt);
             }
         });
 
@@ -92,11 +92,11 @@ public class JFrmIngresosPlanificados extends javax.swing.JFrame {
 
         jLabel5.setText("Año");
 
-        jLabel6.setText("Tipo de Ingreso");
+        jLabel6.setText("Tipo de Gasto");
 
-        jTxtTipoIngresoIngresosPlanificados.addActionListener(new java.awt.event.ActionListener() {
+        jTxtTipoGastosPlanificados.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTxtTipoIngresoIngresosPlanificadosActionPerformed(evt);
+                jTxtTipoGastosPlanificadosActionPerformed(evt);
             }
         });
 
@@ -120,26 +120,26 @@ public class JFrmIngresosPlanificados extends javax.swing.JFrame {
                                 .addComponent(jLabel6)
                                 .addGap(26, 26, 26)))
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jTxtMontoIngresoIngresosPlanificados, javax.swing.GroupLayout.DEFAULT_SIZE, 191, Short.MAX_VALUE)
-                            .addComponent(jTxtTipoIngresoIngresosPlanificados)))
+                            .addComponent(jTxtMontoGastosPlanificados, javax.swing.GroupLayout.DEFAULT_SIZE, 191, Short.MAX_VALUE)
+                            .addComponent(jTxtTipoGastosPlanificados)))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel4)
                             .addComponent(jLabel5))
                         .addGap(27, 27, 27)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jTxtAnioIngresosPlanificados, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTxtMesIngresosPlanificados, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(jTxtAnioGastosPlanificados, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTxtMesGastosPlanificados, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                         .addGroup(layout.createSequentialGroup()
-                            .addComponent(jBtnHomeIngresosPlanificados, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jBtnHomeGastosPlanificados, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGap(106, 106, 106))
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(jBtnSumarIngresosPlanificados, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jBtnSumarGastosPlanificados, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jBtnEliminarIngresosPlanificados, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jTxtResultadoIngresos, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 296, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addComponent(jBtnEliminarGastosPlanificados, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jTxtResultadoGastosPlanificados, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 296, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap(60, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -152,60 +152,60 @@ public class JFrmIngresosPlanificados extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel4)
-                            .addComponent(jTxtMesIngresosPlanificados, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jTxtMesGastosPlanificados, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(38, 38, 38))
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jLabel5)
-                        .addComponent(jTxtAnioIngresosPlanificados, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(jTxtAnioGastosPlanificados, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 20, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel6)
-                    .addComponent(jTxtTipoIngresoIngresosPlanificados, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jTxtTipoGastosPlanificados, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
-                    .addComponent(jTxtMontoIngresoIngresosPlanificados, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jTxtMontoGastosPlanificados, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(27, 27, 27)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jBtnSumarIngresosPlanificados)
-                    .addComponent(jBtnEliminarIngresosPlanificados))
+                    .addComponent(jBtnSumarGastosPlanificados)
+                    .addComponent(jBtnEliminarGastosPlanificados))
                 .addGap(18, 18, 18)
-                .addComponent(jTxtResultadoIngresos, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jTxtResultadoGastosPlanificados, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(32, 32, 32)
-                .addComponent(jBtnHomeIngresosPlanificados)
+                .addComponent(jBtnHomeGastosPlanificados)
                 .addGap(20, 20, 20))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTxtResultadoIngresosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTxtResultadoIngresosActionPerformed
+    private void jTxtResultadoGastosPlanificadosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTxtResultadoGastosPlanificadosActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTxtResultadoIngresosActionPerformed
+    }//GEN-LAST:event_jTxtResultadoGastosPlanificadosActionPerformed
 
-    private void jTxtMontoIngresoIngresosPlanificadosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTxtMontoIngresoIngresosPlanificadosActionPerformed
+    private void jTxtMontoGastosPlanificadosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTxtMontoGastosPlanificadosActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTxtMontoIngresoIngresosPlanificadosActionPerformed
+    }//GEN-LAST:event_jTxtMontoGastosPlanificadosActionPerformed
 
-    private void jTxtMesIngresosPlanificadosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTxtMesIngresosPlanificadosActionPerformed
+    private void jTxtMesGastosPlanificadosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTxtMesGastosPlanificadosActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTxtMesIngresosPlanificadosActionPerformed
+    }//GEN-LAST:event_jTxtMesGastosPlanificadosActionPerformed
 
-    private void jTxtAnioIngresosPlanificadosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTxtAnioIngresosPlanificadosActionPerformed
+    private void jTxtAnioGastosPlanificadosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTxtAnioGastosPlanificadosActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTxtAnioIngresosPlanificadosActionPerformed
+    }//GEN-LAST:event_jTxtAnioGastosPlanificadosActionPerformed
 
-    private void jTxtTipoIngresoIngresosPlanificadosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTxtTipoIngresoIngresosPlanificadosActionPerformed
+    private void jTxtTipoGastosPlanificadosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTxtTipoGastosPlanificadosActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTxtTipoIngresoIngresosPlanificadosActionPerformed
+    }//GEN-LAST:event_jTxtTipoGastosPlanificadosActionPerformed
 
-    private void jBtnSumarIngresosPlanificadosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnSumarIngresosPlanificadosActionPerformed
+    private void jBtnSumarGastosPlanificadosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnSumarGastosPlanificadosActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jBtnSumarIngresosPlanificadosActionPerformed
+    }//GEN-LAST:event_jBtnSumarGastosPlanificadosActionPerformed
 
-    private void jBtnEliminarIngresosPlanificadosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnEliminarIngresosPlanificadosActionPerformed
+    private void jBtnEliminarGastosPlanificadosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnEliminarGastosPlanificadosActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jBtnEliminarIngresosPlanificadosActionPerformed
+    }//GEN-LAST:event_jBtnEliminarGastosPlanificadosActionPerformed
 
     /**
      * @param args the command line arguments
@@ -224,14 +224,22 @@ public class JFrmIngresosPlanificados extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(JFrmIngresosPlanificados.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JFrmGastosPlanificados.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(JFrmIngresosPlanificados.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JFrmGastosPlanificados.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(JFrmIngresosPlanificados.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JFrmGastosPlanificados.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(JFrmIngresosPlanificados.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JFrmGastosPlanificados.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
         //</editor-fold>
@@ -244,24 +252,24 @@ public class JFrmIngresosPlanificados extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new JFrmIngresosPlanificados().setVisible(true);
+                new JFrmGastosPlanificados().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    public javax.swing.JButton jBtnEliminarIngresosPlanificados;
-    public javax.swing.JButton jBtnHomeIngresosPlanificados;
-    public javax.swing.JButton jBtnSumarIngresosPlanificados;
+    public javax.swing.JButton jBtnEliminarGastosPlanificados;
+    public javax.swing.JButton jBtnHomeGastosPlanificados;
+    public javax.swing.JButton jBtnSumarGastosPlanificados;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
-    public javax.swing.JTextField jTxtAnioIngresosPlanificados;
-    public javax.swing.JTextField jTxtMesIngresosPlanificados;
-    public javax.swing.JTextField jTxtMontoIngresoIngresosPlanificados;
-    public javax.swing.JTextField jTxtResultadoIngresos;
-    public javax.swing.JTextField jTxtTipoIngresoIngresosPlanificados;
+    public javax.swing.JTextField jTxtAnioGastosPlanificados;
+    public javax.swing.JTextField jTxtMesGastosPlanificados;
+    public javax.swing.JTextField jTxtMontoGastosPlanificados;
+    public javax.swing.JTextField jTxtResultadoGastosPlanificados;
+    public javax.swing.JTextField jTxtTipoGastosPlanificados;
     // End of variables declaration//GEN-END:variables
 }
